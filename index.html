@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FlexiDrive | Portal de Arquitectura Empresarial</title>
+  <meta name="description" content="Portal interactivo de la Arquitectura Empresarial de FlexiDrive: estrategia, negocio, información, aplicaciones, tecnología y transformación.">
+  <link rel="icon" href="img/icono.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+
+<!-- ===================== Navegación: la ruta de la arquitectura ===================== -->
+<aside class="ruta" aria-label="Secciones del portal">
+  <a class="marca" href="#inicio">
+    <img src="img/icono.png" alt="" width="40" height="40">
+    <span>FlexiDrive</span>
+  </a>
+  <p class="marca-sub">Portal de Arquitectura Empresarial</p>
+  <nav id="nav"></nav>
+  <div class="creditos">
+    <img src="img/unilibre.png" alt="Universidad Libre" width="46" height="46">
+    <p>Universidad Libre, Seccional Barranquilla<br>Ingeniería de Sistemas, 2026</p>
+  </div>
+</aside>
+
+<main id="contenido">
+
+  <!-- ===================== Inicio ===================== -->
+  <section id="inicio" class="vista">
+    <div class="portada">
+      <div class="portada-texto">
+        <h1>La arquitectura de FlexiDrive, de la estrategia a la nube</h1>
+        <p>FlexiDrive conecta a propietarios de vehículos disponibles con personas que necesitan transporte temporal, sin sedes físicas. Este portal muestra cómo está diseñada la empresa para lograrlo.</p>
+        <div class="acciones">
+          <a class="boton" href="#negocio">Simular un alquiler</a>
+          <a class="boton claro" href="#explorador">Seguir un objetivo</a>
+        </div>
+      </div>
+      <!-- Trayecto de un alquiler: el carro recorre las ocho paradas -->
+      <svg class="trayecto" viewBox="0 0 420 330" role="img" aria-label="Recorrido de un alquiler: buscar, reservar, verificar, pagar, entregar, usar, devolver y cerrar">
+        <defs>
+          <linearGradient id="gradRuta" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3272F9"/><stop offset="1" stop-color="#903BF5"/></linearGradient>
+        </defs>
+        <path id="via" d="M40 40 H330 a45 45 0 0 1 0 90 H90 a45 45 0 0 0 0 90 H330 a35 35 0 0 1 0 70 H60" fill="none" stroke="rgba(255,255,255,.14)" stroke-width="26" stroke-linecap="round"/>
+        <path d="M40 40 H330 a45 45 0 0 1 0 90 H90 a45 45 0 0 0 0 90 H330 a35 35 0 0 1 0 70 H60" fill="none" stroke="url(#gradRuta)" stroke-width="3" stroke-dasharray="2 12" stroke-linecap="round"/>
+        <g id="paradas"></g>
+        <g id="carro">
+          <rect x="-15" y="-9" width="30" height="18" rx="7" fill="#fff"/>
+          <rect x="-7" y="-6" width="12" height="12" rx="3" fill="#6147D9"/>
+        </g>
+      </svg>
+    </div>
+
+    <h2>Quién es FlexiDrive</h2>
+    <div class="trio">
+      <article><h3>Sector</h3><p>Movilidad y transporte: alquiler temporal de vehículos entre particulares. Inicia operaciones en Barranquilla.</p></article>
+      <article><h3>Problema</h3><p>El alquiler tradicional exige ir a sedes fijas, dejar depósitos y garantías, y no se adapta al tiempo de uso. Mientras tanto, hay vehículos quietos que podrían generar ingresos.</p></article>
+      <article><h3>Propuesta de valor</h3><p>Una alternativa flexible, cercana y confiable, adaptada a la ubicación, el tiempo, el presupuesto y la necesidad de cada usuario.</p></article>
+    </div>
+
+    <h2>A quién le sirve</h2>
+    <ul class="publico">
+      <li><b>Residentes</b> que necesitan un vehículo por un periodo determinado.</li>
+      <li><b>Turistas nacionales</b> que quieren un vehículo durante su estadía.</li>
+      <li><b>Turistas internacionales</b> que buscan opciones cerca del aeropuerto o del alojamiento.</li>
+      <li><b>Trabajadores en tránsito</b> que requieren transporte mientras están en otra ciudad.</li>
+      <li><b>Propietarios</b> que quieren ingresos con vehículos que no usan.</li>
+    </ul>
+
+    <h2>Qué puedes hacer aquí</h2>
+    <div class="accesos" id="accesos"></div>
+  </section>
+
+  <!-- ===================== Estrategia ===================== -->
+  <section id="estrategia" class="vista">
+    <h1>De la misión a las capacidades</h1>
+    <div class="duo">
+      <article class="cita"><h3>Misión</h3><p>Conectar a propietarios de vehículos disponibles con personas que necesitan una alternativa de transporte temporal, facilitando una experiencia de alquiler flexible, confiable y cercana.</p></article>
+      <article class="cita"><h3>Visión 2031</h3><p>Ser referente en movilidad inteligente y flexible en Colombia, con presencia en las principales ciudades y destinos turísticos, evolucionando hacia un ecosistema de movilidad, turismo y nuevas formas de transporte.</p></article>
+    </div>
+    <h2>Objetivos estratégicos</h2>
+    <p class="ayuda">Elige un objetivo para resaltar las capacidades que lo hacen posible.</p>
+    <div class="rejilla cinco" id="objetivos"></div>
+    <h2>Capacidades de negocio</h2>
+    <p class="ayuda">Elige una capacidad para ver por qué existe, quién responde por ella y qué aplicaciones la soportan.</p>
+    <div class="rejilla cuatro" id="capacidades"></div>
+    <div class="detalle" id="detalle-capacidad" hidden></div>
+    <h2>Reglas de negocio de la capacidad estratégica</h2>
+    <ol class="reglas" id="reglas"></ol>
+  </section>
+
+  <!-- ===================== Negocio ===================== -->
+  <section id="negocio" class="vista">
+    <h1>Cómo funciona un alquiler</h1>
+    <p class="entrada">Recorre el proceso paso a paso. Tú decides en cada compuerta y el tablero muestra qué rol actúa, qué regla se cumple, qué datos se usan y qué aplicación lo soporta.</p>
+
+    <div class="simulador">
+      <div class="tablero-marco">
+        <svg id="tablero" role="img" aria-label="Tablero del proceso de alquiler por carriles"></svg>
+      </div>
+      <div class="paso" id="paso" aria-live="polite"></div>
+    </div>
+
+    <h2>Mapa de procesos</h2>
+    <div class="tabla-marco"><table id="procesos"></table></div>
+
+    <h2>Diagramas BPMN</h2>
+    <p class="ayuda">Haz clic en un diagrama para ampliarlo.</p>
+    <figure><img class="diagrama" src="img/bpmn-alquiler-1.png" alt="BPMN del alquiler, parte 1: solicitud y reserva" loading="lazy"><figcaption>Alquiler de vehículo, parte 1: solicitud y reserva.</figcaption></figure>
+    <figure><img class="diagrama" src="img/bpmn-alquiler-2.png" alt="BPMN del alquiler, parte 2: entrega, uso y cierre" loading="lazy"><figcaption>Alquiler de vehículo, parte 2: entrega, uso y cierre.</figcaption></figure>
+    <figure><img class="diagrama" src="img/bpmn-vinculacion.png" alt="BPMN de vinculación de propietarios y publicación de vehículos" loading="lazy"><figcaption>Vinculación de propietarios y publicación de vehículos: la plataforma valida SOAT y técnico-mecánica, el administrador verifica identidad y propiedad, y solo entonces se publica el vehículo.</figcaption></figure>
+  </section>
+
+  <!-- ===================== Información ===================== -->
+  <section id="informacion" class="vista">
+    <h1>Los datos y cómo se organizan</h1>
+    <p class="entrada">Doce entidades con la Reserva como eje. Elige una entidad para ver qué representa, con qué se relaciona y qué servicio es su dueño.</p>
+    <div class="mer-zona">
+      <div class="mer" id="mer"><svg id="mer-lineas" aria-hidden="true"></svg></div>
+      <div class="detalle" id="detalle-entidad"></div>
+    </div>
+    <h2>Modelo entidad-relación completo</h2>
+    <p class="ayuda">Con atributos, llaves y cardinalidades. Haz clic para ampliarlo.</p>
+    <figure class="angosta"><img class="diagrama" src="img/mer.png" alt="Modelo entidad-relación de FlexiDrive en notación pata de gallo" loading="lazy"></figure>
+    <h2>Ciclo de vida de la información</h2>
+    <ol class="ciclo">
+      <li><h3>Capturar</h3><p>El usuario se registra una sola vez; el propietario publica su vehículo con documentos y fotos.</p></li>
+      <li><h3>Validar</h3><p>Identidad, licencia, medio de pago y vencimientos de SOAT y técnico-mecánica.</p></li>
+      <li><h3>Compartir</h3><p>La reserva reutiliza los datos validados; propietario y aseguradora reciben lo necesario.</p></li>
+      <li><h3>Actualizar</h3><p>Cambian el estado de la reserva, la disponibilidad, los pagos, las inspecciones y la reputación.</p></li>
+    </ol>
+  </section>
+
+  <!-- ===================== Aplicaciones ===================== -->
+  <section id="aplicaciones" class="vista">
+    <h1>Las soluciones que soportan el negocio</h1>
+    <p class="entrada">Arquitectura por capas basada en microservicios e integrada por eventos. Elige un componente; los que tienen borde púrpura son los servicios críticos de confianza y seguridad.</p>
+    <div class="capas-zona">
+      <div id="capas"></div>
+      <div class="detalle" id="detalle-app"></div>
+    </div>
+    <h2>Integración por eventos</h2>
+    <p class="ayuda">Elige un evento para ver quién lo publica y quién reacciona.</p>
+    <div class="fichas" id="eventos"></div>
+    <div class="flujo-evento" id="detalle-evento"></div>
+    <h2>Vista por capas</h2>
+    <figure class="angosta"><img class="diagrama" src="img/aplicaciones.png" alt="Arquitectura de aplicaciones por capas" loading="lazy"></figure>
+  </section>
+
+  <!-- ===================== Tecnología ===================== -->
+  <section id="tecnologia" class="vista">
+    <h1>La infraestructura que permite operar</h1>
+    <p class="entrada">Nube pública con pago por uso: FlexiDrive no compra servidores y crece cuando abre nuevas ciudades.</p>
+    <div class="cifras" id="indicadores"></div>
+    <h2>Componentes</h2>
+    <div class="rejilla cuatro" id="tecnologias"></div>
+    <h2>Diagrama de red</h2>
+    <p class="ayuda">Haz clic para ampliarlo.</p>
+    <figure><img class="diagrama" src="img/red.png" alt="Diagrama de red e infraestructura en la nube" loading="lazy"></figure>
+    <div class="duo">
+      <article><h3>Redes y conectividad</h3><ul>
+        <li>Apps y portales por internet con HTTPS/TLS; CDN cerca del usuario.</li>
+        <li>Red virtual privada: subred pública (API Gateway) y subredes privadas (servicios y datos) con firewall.</li>
+        <li>Integraciones con terceros por APIs cifradas.</li>
+        <li>Backoffice con autenticación de dos factores.</li></ul></article>
+      <article><h3>Seguridad de la información</h3><ul>
+        <li>Roles y mínimo privilegio.</li>
+        <li>Datos personales conforme a la Ley 1581 de 2012.</li>
+        <li>Pagos tokenizados: no se guardan tarjetas.</li>
+        <li>Evidencias con fecha, hora y usuario.</li>
+        <li>Respaldo diario y monitoreo continuo.</li></ul></article>
+    </div>
+  </section>
+
+  <!-- ===================== Transformación ===================== -->
+  <section id="transformacion" class="vista">
+    <h1>Del alquiler informal a la Visión 2031</h1>
+    <p class="entrada">Compara el punto de partida con la arquitectura objetivo y recorre el roadmap.</p>
+    <div class="conmutador" id="conmutador" role="group" aria-label="Estado de la arquitectura">
+      <button type="button" data-modo="asis">Hoy en el mercado (As-Is)</button>
+      <button type="button" data-modo="tobe">FlexiDrive (To-Be)</button>
+    </div>
+    <div class="rejilla tres" id="estados"></div>
+    <h2>Brechas priorizadas</h2>
+    <div class="tabla-marco"><table id="brechas"></table></div>
+    <h2>Roadmap de migración</h2>
+    <p class="ayuda">Elige una fase para ver actividades, responsables e hitos.</p>
+    <div class="linea-tiempo" id="fases"></div>
+    <div class="detalle" id="detalle-fase"></div>
+    <h2>Gobierno de TI</h2>
+    <div class="trio">
+      <article><h3>Principios</h3><p>El negocio manda. Capturar una vez. Un dato, un dueño. Seguridad desde el diseño. Integración por estándares. Nube primero.</p></article>
+      <article><h3>Comité de Arquitectura</h3><p>Gerencia, Líder de TI, Confianza y Seguridad, Operaciones y Finanzas. Aprueba el roadmap, prioriza y revisa el cumplimiento.</p></article>
+      <article><h3>Marcos usados</h3><p>Matriz de Zachman para clasificar, TOGAF ADM para ordenar el trabajo y ArchiMate 3.1 para modelar.</p></article>
+    </div>
+  </section>
+
+  <!-- ===================== Explorador ===================== -->
+  <section id="explorador" class="vista">
+    <h1>Sigue un objetivo hasta la tecnología</h1>
+    <p class="entrada">Elige un objetivo estratégico y recorre la cadena completa. Así se comprueba que la arquitectura está alineada: nada existe sin un objetivo que lo justifique.</p>
+    <div class="fichas" id="objetivos-cadena"></div>
+    <ol class="cadena" id="cadena"></ol>
+    <h2>Marco de referencia aplicado</h2>
+    <div class="tabla-marco"><table id="adm"></table></div>
+    <h2>Declaración de uso de Inteligencia Artificial</h2>
+    <div class="declaracion">
+      <p><b>Herramienta:</b> asistente de IA generativa Claude (Anthropic).</p>
+      <p><b>Propósito:</b> apoyo en la organización de ideas, la redacción, la verificación del modelo ArchiMate y el desarrollo de este portal.</p>
+      <p><b>Contribución del equipo:</b> creación de la empresa y su estrategia, Matriz de Zachman, diseño del proceso (BPMN), del modelo de datos (MER) y de la arquitectura de aplicaciones; decisiones de arquitectura, revisión y validación de todo el contenido.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p><b>Proyecto final de Arquitectura Empresarial.</b> Harlem Josué Hernández Marún, Gabriel Andrés Padilla Suárez y Juan Felipe Noguera Acendra. Docente: Emiro Berrio Rodríguez.</p>
+  </footer>
+</main>
+
+<!-- Visor para ampliar diagramas -->
+<div class="visor" id="visor" hidden>
+  <button type="button" class="visor-cerrar" id="visor-cerrar">Cerrar</button>
+  <div class="visor-lienzo"><img alt=""></div>
+</div>
+
+<script src="js/datos.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
